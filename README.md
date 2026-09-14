@@ -74,39 +74,9 @@ O projeto conecta diretamente o modelo conceitual desenvolvido na disciplina de 
 
 ---
 
-## 📂 6. Estrutura Padrão de Funções (Didático)
-
-Para manter a clareza e facilitar a explicação de cada aluno perante o professor, todos os módulos seguem uma convenção uniforme de funções:
-
-```javascript
-// Exemplo conceitual adotado em todos os CRUDs
-function carregarDados() { ... }     // getItem() + JSON.parse()
-function salvarDados(lista) { ... }  // JSON.stringify() + setItem()
-function cadastrarRegistro() { ... } // Create
-function listarRegistros() { ... }   // Read
-function editarRegistro(id) { ... }  // Update
-function excluirRegistro(id) { ... } // Delete
-```
-
----
-
-## 🚀 7. Como Executar a Aplicação
+## 🚀 6. Como Executar a Aplicação
 
 1. Clone ou baixe este repositório.
 2. Abra a pasta do projeto.
 3. Abra o arquivo `index.html` diretamente em qualquer navegador web moderno (Google Chrome, Firefox, Microsoft Edge).
 4. **Dica de Teste**: Para verificar o funcionamento do `LocalStorage` do zero, teste em uma janela anônima ou limpe os dados do navegador através do DevTools (`F12` > *Application* > *Local Storage*).
-
----
-
-## ✅ 8. Checklist de Avaliação
-
-- [ ] CRUD 1 (Gêneros Literários) funcional (Criar, Listar, Editar, Excluir)
-- [ ] CRUD 2 (Leitores) funcional (Criar, Listar, Editar, Excluir)
-- [ ] CRUD 3 (Livros) funcional (Criar, Listar, Editar, Excluir)
-- [ ] CRUD 4 (Clubes de Leitura) funcional (Criar, Listar, Editar, Excluir)
-- [ ] CRUD 5 (Resenhas & Avaliações) funcional (Criar, Listar, Editar, Excluir)
-- [ ] Persistência via `LocalStorage` validada
-- [ ] Utilização correta de `JSON.stringify()` e `JSON.parse()`
-- [ ] Interface responsiva e limpa com Bootstrap 5
-- [ ] Ausência de dependência de login ou tecnologias não ministradas em aula
