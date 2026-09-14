@@ -31,47 +31,37 @@ O projeto conecta diretamente o modelo conceitual desenvolvido na disciplina de 
 
 ## 👥 3. Divisão dos Módulos (1 Integrante = 1 CRUD)
 
-| Módulo / CRUD | Entidade | Responsável | Nível | Descrição |
-| :--- | :---: | :---: | :---: | :--- |
-| **1. Gêneros Literários** | `GENERO` | *[Nome do Aluno 1]* | 🟢 Muito Fácil | Cadastro e categorização de gêneros (Fantasia, Ficção, Romance, etc.). |
-| **2. Leitores (Usuários)** | `USUARIO` | *[Nome do Aluno 2]* | 🟡 Fácil | Gestão de perfis de leitores, e-mails e metas anuais de leitura. |
-| **3. Catálogo de Livros** | `LIVRO` | *[Nome do Aluno 3]* | 🟠 Médio | Gerenciamento de acervo com título, autor, gênero, páginas e ano de publicação. |
-| **4. Clubes de Leitura** | `CLUBE` | *[Nome do Aluno 4]* | 🔵 Médio+ | Administração de círculos literários, capacidade de membros e status de atividade. |
-| **5. Avaliações & Resenhas**| `RESENHA` | *[Nome do Aluno 5]* | 🔴 Desafiador | Publicação de resenhas críticas, notas avaliativas (1 a 5) e recomendações. |
+| Módulo / CRUD | Entidade | Responsável | Descrição |
+| :--- | :---: | :---: | :--- |
+| **1. Gêneros Literários** | `GENERO` | *[Nome do Aluno 1]* | Cadastro e categorização de gêneros (Fantasia, Ficção, Romance, etc.). |
+| **2. Leitores (Usuários)** | `USUARIO` | *[Nome do Aluno 2]* | Gestão de perfis de leitores, e-mails e metas anuais de leitura. |
+| **3. Catálogo de Livros** | `LIVRO` | *[Nome do Aluno 3]* | Gerenciamento de acervo com título, autor, gênero, páginas e ano de publicação. |
+| **4. Clubes de Leitura** | `CLUBE` | *[Nome do Aluno 4]* | Administração de círculos literários, capacidade de membros e status de atividade. |
+| **5. Avaliações & Resenhas**| `RESENHA` | *[Nome do Aluno 5]* | Publicação de resenhas críticas, notas avaliativas (1 a 5) e recomendações. |
 
 ---
 
-## 🏆 4. Tierlist de Complexidade dos CRUDs
+## 📋 4. Detalhamento das Entidades e Atributos
 
-```
-[MUITO FÁCIL]      🟢 1. CRUD de Gêneros Literários
-[FÁCIL]            🟡 2. CRUD de Leitores (Usuários)
-[MÉDIO]            🟠 3. CRUD de Livros
-[MÉDIO +]          🔵 4. CRUD de Clubes de Leitura
-[DESAFIADOR]       🔴 5. CRUD de Avaliações / Resenhas
-```
-
-### Detalhamento por Módulo
-
-#### 🟢 Módulo 1: Gêneros Literários (`GENERO`)
+### 📚 Módulo 1: Gêneros Literários (`GENERO`)
 * **Campos**: `id`, `nome`, `descricao`
-* **Características**: Entidade independente, foco em campos textuais básicos. Ideal para validação direta e código conciso.
+* **Funcionalidade**: Responsável pela classificação temática das obras e direcionamento dos interesses dos clubes.
 
-#### 🟡 Módulo 2: Leitores / Usuários (`USUARIO`)
+### 👤 Módulo 2: Leitores / Usuários (`USUARIO`)
 * **Campos**: `id`, `nome`, `email`, `meta_leitura`
-* **Características**: Validação de formato de e-mail e campo numérico inteiro para a meta de leitura.
+* **Funcionalidade**: Manutenção dos dados dos leitores da comunidade e acompanhamento de metas literárias anuais.
 
-#### 🟠 Módulo 3: Catálogo de Livros (`LIVRO`)
+### 📖 Módulo 3: Catálogo de Livros (`LIVRO`)
 * **Campos**: `id`, `titulo`, `autor`, `genero`, `paginas`, `ano`
-* **Características**: Volume maior de atributos, conversão numérica (`parseInt`) para páginas e ano, e exibição em tabela estruturada.
+* **Funcionalidade**: Cadastro central de títulos literários que alimentam as discussões dos clubes e as avaliações.
 
-#### 🔵 Módulo 4: Clubes de Leitura (`CLUBE`)
+### 👥 Módulo 4: Clubes de Leitura (`CLUBE`)
 * **Campos**: `id`, `nome_clube`, `tema`, `capacidade_max`, `status` (Ativo/Em Pausa/Encerrado), `data_criacao`
-* **Características**: Manipulação de campos de data (`input type="date"`), seleção com `<select>` e badges visuais de status.
+* **Funcionalidade**: Criação e gestão de grupos temáticos com controle de capacidade e acompanhamento de status.
 
-#### 🔴 Módulo 5: Avaliações & Resenhas (`RESENHA`)
+### ⭐ Módulo 5: Avaliações & Resenhas (`RESENHA`)
 * **Campos**: `id`, `livro`, `leitor`, `nota` (1 a 5), `texto_resenha`, `recomenda` (Sim/Não)
-* **Características**: Integração lógica com os livros cadastrados, validação de intervalo numérico de notas e controle booleano/checkbox.
+* **Funcionalidade**: Registro das impressões de leitura, notas avaliativas e recomendações de livros para a comunidade.
 
 ---
 
@@ -109,7 +99,7 @@ function excluirRegistro(id) { ... } // Delete
 
 ---
 
-## 📋 8. Checklist de Avaliação
+## ✅ 8. Checklist de Avaliação
 
 - [ ] CRUD 1 (Gêneros Literários) funcional (Criar, Listar, Editar, Excluir)
 - [ ] CRUD 2 (Leitores) funcional (Criar, Listar, Editar, Excluir)
