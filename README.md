@@ -33,11 +33,11 @@ O projeto conecta diretamente o modelo conceitual desenvolvido na disciplina de 
 
 | Módulo / CRUD | Entidade | Responsável | Descrição |
 | :--- | :---: | :---: | :--- |
-| **1. Gêneros Literários** | `GENERO` | *[Nome do Aluno 1]* | Cadastro e categorização de gêneros (Fantasia, Ficção, Romance, etc.). |
-| **2. Leitores (Usuários)** | `USUARIO` | *[Nome do Aluno 2]* | Gestão de perfis de leitores, e-mails e metas anuais de leitura. |
-| **3. Catálogo de Livros** | `LIVRO` | *[Nome do Aluno 3]* | Gerenciamento de acervo com título, autor, gênero, páginas e ano de publicação. |
-| **4. Clubes de Leitura** | `CLUBE` | *[Nome do Aluno 4]* | Administração de círculos literários, capacidade de membros e status de atividade. |
-| **5. Avaliações & Resenhas**| `RESENHA` | *[Nome do Aluno 5]* | Publicação de resenhas críticas, notas avaliativas (1 a 5) e recomendações. |
+| **1. Gêneros Literários** | `GENERO` | *Julia Moura Ruela* | Cadastro e categorização de gêneros (Fantasia, Ficção, Romance, etc.). |
+| **2. Leitores (Usuários)** | `USUARIO` | *Yasmin Luz de Araújo* | Gestão de perfis de leitores, e-mails e metas anuais de leitura. |
+| **3. Catálogo de Livros** | `LIVRO` | *Leticia Hellen Prata de Souza* | Gerenciamento de acervo com título, autor, gênero, páginas e ano de publicação. |
+| **4. Clubes de Leitura** | `CLUBE` | *Sabrina Bernardi Ferreira* | Administração de círculos literários, capacidade de membros e status de atividade. |
+| **5. Avaliações & Resenhas**| `RESENHA` | *Henrique Gnatkovski de Almeida* | Publicação de resenhas críticas, notas avaliativas (1 a 5) e recomendações. |
 
 ---
 
