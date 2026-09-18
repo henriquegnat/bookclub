@@ -1,0 +1,32 @@
+/* ===================================================
+   css geral do projeto bookclub
+   estilos compartilhados por todas as páginas
+   =================================================== */
+
+/* deixa a rolagem da pagina suave ao clicar em links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* efeito de spoiler (desfoque no texto) */
+.spoiler {
+    filter: blur(6px);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* quando passar o mouse, revela o texto com spoiler */
+.spoiler:hover {
+    filter: blur(0);
+    user-select: auto;
+}
+
+/* efeitinho suave ao passar o mouse por cima dos cards */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
